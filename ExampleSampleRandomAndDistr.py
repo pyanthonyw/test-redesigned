@@ -11,7 +11,7 @@ import pandas as pd
 # numpy
 # names of names_speakers - hard coded
 #########################
-names_speakers = { 1:'j', 2:'s', 3:'a'} #https://docs.python.org/3.6/tutorial/datastructures.html
+names_speakers = { 1:'j', 2:'s', 3:'a',4:'c'} #https://docs.python.org/3.6/tutorial/datastructures.html
 x = np.random.rand()
 print(int( np.ceil(3*x) ))
 print(names_speakers[ int( np.ceil(3*x) ) ] )
