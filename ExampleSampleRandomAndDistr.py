@@ -34,8 +34,12 @@ N = 20*1000
 x2 = np.random.gamma(2,10,N)
 df = pd.DataFrame(x2,columns=['Distr'])#,index=data[:,0]),
 print(df.head())
+
+# Useful
 print(df.Distr.hist(bins=int(N/1000))) # https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.hist.html
+# Also Useful
 print(df.Distr.hist(bins=int(N/100))) # https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.hist.html
+# Danger
 print(df.Distr.hist(bins=int(N/10))) # https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.hist.html
 #########################
 
