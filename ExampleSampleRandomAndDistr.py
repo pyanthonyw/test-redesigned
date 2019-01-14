@@ -12,7 +12,7 @@ import pandas as pd
 # names of names_speakers - hard coded
 #########################
 names_speakers = { 1:'JC', 2:'SH', 3:'AW', 4:'SW'} #https://docs.python.org/3.6/tutorial/datastructures.html
-np.random.seed(62)
+#np.random.seed(62)
 x = np.random.rand()
 print(int( np.ceil(len(names_speakers)*x) ))
 print(names_speakers[ int( np.ceil(len(names_speakers)*x) ) ] )
