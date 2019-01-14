@@ -11,17 +11,17 @@ import pandas as pd
 # numpy
 # names of names_speakers - hard coded
 #########################
-names_speakers = { 1:'j', 2:'s', 3:'a'} #https://docs.python.org/3.6/tutorial/datastructures.html
+names_speakers = { 1:'JC', 2:'SH', 3:'AW', 4:'SW'} #https://docs.python.org/3.6/tutorial/datastructures.html
 np.random.seed(62)
 x = np.random.rand()
-print(int( np.ceil(3*x) ))
-print(names_speakers[ int( np.ceil(3*x) ) ] )
+print(int( np.ceil(len(names_speakers)*x) ))
+print(names_speakers[ int( np.ceil(len(names_speakers)*x) ) ] )
 #########################
 # Demonstrate it working
 for j in range(5):
     x = np.random.rand()
-    print(int( np.ceil(3*x) ))
-    print(names_speakers[ int( np.ceil(3*x) ) ] )
+    print(int( np.ceil(len(names_speakers)*x) ))
+    print(names_speakers[ int( np.ceil(len(names_speakers)*x) ) ] )
 
 
 
